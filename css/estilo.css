@@ -407,7 +407,7 @@ footer ul {
 
 .flutuante--whatsapp { background: #25D366; }
 .flutuante--ligar     { background: var(--tinta-2); border: 1px solid var(--creme-fraco); }
-.flutuante--ifood     { background: var(--brasa); }
+.flutuante--ifood     { background: #EA1D2C; }
 
 @media (max-width: 640px) {
   .flutuantes { right: 16px; bottom: 172px; }
