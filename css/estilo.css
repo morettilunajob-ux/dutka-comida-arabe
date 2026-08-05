@@ -376,7 +376,48 @@ footer ul {
   .topo h1 { font-size: 2rem; }
 }
 
+/* ---- Botões flutuantes ---- */
+
+.flutuantes {
+  position: fixed;
+  right: 20px;
+  bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 15;
+}
+
+.flutuante {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--creme);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.flutuante svg { width: 26px; height: 26px; }
+
+.flutuante:hover { transform: translateY(-3px) scale(1.06); }
+.flutuante:active { transform: scale(0.94); }
+
+.flutuante--whatsapp { background: #25D366; }
+.flutuante--ligar     { background: var(--tinta-2); border: 1px solid var(--creme-fraco); }
+.flutuante--ifood     { background: var(--brasa); }
+
+@media (max-width: 640px) {
+  .flutuantes { right: 16px; bottom: 172px; }
+  .flutuante { width: 48px; height: 48px; }
+  .flutuante svg { width: 24px; height: 24px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
+  .flutuante { transition: none; }
+  .flutuante:hover, .flutuante:active { transform: none; }
   html { scroll-behavior: auto; }
 }
 

@@ -9,7 +9,8 @@ const DADOS = {
     whatsapp: "5541996660287",
     instagram: "dutkaculinariarabe",
     facebook: "dutkacomidaarabe",
-    delivery: "https://pedido.anota.ai/loja/dutka-comidas-arabe"
+    delivery: "https://pedido.anota.ai/loja/dutka-comidas-arabe",
+    ifood: "https://www.ifood.com.br/delivery/pontal-do-parana-pr/dutkas-shangrila/7771cd38-41c1-46d4-a14f-c80724e3247c"
   },
 
   endereco: {

@@ -76,6 +76,13 @@ function renderContato() {
       el.hidden = false;
     });
   }
+
+  if (DADOS.contato.ifood) {
+    document.querySelectorAll('[data-ifood]').forEach(el => {
+      el.href = DADOS.contato.ifood;
+      el.hidden = false;
+    });
+  }
 }
 
 function renderEndereco() {
