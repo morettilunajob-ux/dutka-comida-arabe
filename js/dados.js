@@ -6,8 +6,10 @@ const DADOS = {
   contato: {
     telefone: "(41) 99666-0287",
     telefoneLink: "+5541996660287",
-    whatsapp: null,            // PENDENTE — confirmar com o dono
-    instagram: null            // PENDENTE — confirmar com o dono
+    whatsapp: "5541996660287",
+    instagram: "dutkaculinariarabe",
+    facebook: "dutkacomidaarabe",
+    delivery: "https://pedido.anota.ai/loja/dutka-comidas-arabe"
   },
 
   endereco: {

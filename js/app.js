@@ -12,9 +12,9 @@ function horaAgoraSP() {
   return { hora: Number(mapa.hour), minuto: Number(mapa.minute) };
 }
 
-function statusAgora() {
+function statusAgora(horaForcada, minutoForcado) {
   const { abre, fecha } = DADOS.horario;
-  const { hora, minuto } = horaAgoraSP();
+  const { hora, minuto } = horaForcada === undefined ? horaAgoraSP() : { hora: horaForcada, minuto: minutoForcado ?? 0 };
   const agora = hora * 60 + minuto;
 
   if (agora >= abre * 60 && agora < fecha * 60) {
@@ -59,6 +59,20 @@ function renderContato() {
   if (DADOS.contato.instagram) {
     document.querySelectorAll('[data-instagram]').forEach(el => {
       el.href = `https://instagram.com/${DADOS.contato.instagram}`;
+      el.hidden = false;
+    });
+  }
+
+  if (DADOS.contato.facebook) {
+    document.querySelectorAll('[data-facebook]').forEach(el => {
+      el.href = `https://www.facebook.com/${DADOS.contato.facebook}`;
+      el.hidden = false;
+    });
+  }
+
+  if (DADOS.contato.delivery) {
+    document.querySelectorAll('[data-delivery]').forEach(el => {
+      el.href = DADOS.contato.delivery;
       el.hidden = false;
     });
   }

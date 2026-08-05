@@ -89,6 +89,14 @@ section:not(:last-of-type)::after {
   font-size: 1.1rem;
 }
 
+.selo-avaliacao {
+  display: inline-block;
+  color: var(--acafrao);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: 8px 0 0;
+}
+
 .selo {
   display: inline-block;
   padding: 8px 16px;
@@ -105,6 +113,8 @@ section:not(:last-of-type)::after {
   background: rgba(232, 169, 59, 0.18);
   border-color: var(--acafrao);
   color: var(--acafrao);
+  font-size: 1rem;
+  padding: 10px 20px;
   animation: respirar-brasa 2.4s ease-in-out infinite;
 }
 

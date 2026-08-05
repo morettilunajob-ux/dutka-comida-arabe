@@ -24,9 +24,11 @@ No mesmo arquivo, `whatsapp: null` vira `whatsapp: "5541999999999"` (código do 
 
 ## Pendências
 
-- [ ] Cardápio completo com preços
+- [ ] Cardápio completo com preços (parcial: pode ser visto no delivery — pedido.anota.ai)
 - [ ] Fotos reais: fachada, salão, shawarma, kibe recheado, kafta
-- [ ] Número de WhatsApp (é o mesmo do telefone?)
-- [ ] @ do Instagram
+- [x] Número de WhatsApp — mesmo do telefone, (41) 99666-0287
+- [x] @ do Instagram — dutkaculinariarabe
+- [x] Facebook — dutkacomidaarabe
+- [x] Link de delivery — pedido.anota.ai/loja/dutka-comidas-arabe
 - [ ] Confirmar endereço — "Av. Itanhaém, 188" precisa de checagem
 - [ ] Confirmar se abre mesmo todos os dias, inclusive domingo e feriado

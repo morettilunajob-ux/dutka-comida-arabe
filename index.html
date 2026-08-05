@@ -25,7 +25,7 @@
   "name": "Dutka Comida Árabe",
   "servesCuisine": "Árabe",
   "priceRange": "R$20–40",
-  "acceptsReservations": "False",
+  "acceptsReservations": false,
   "telephone": "+5541996660287",
   "address": {
     "@type": "PostalAddress",
@@ -58,9 +58,11 @@
     <p class="subtitulo">Comida Árabe</p>
     <h1>Dutka</h1>
     <p class="chamada">Shawarma e kibe de verdade, em Pontal do Paraná.</p>
+    <p class="selo-avaliacao" data-avaliacao></p>
     <div id="status-selo" class="selo">Carregando horário…</div>
     <div class="botoes">
-      <a class="botao botao--principal" data-telefone-link href="#">Ligar</a>
+      <a class="botao botao--principal" data-delivery hidden href="#" target="_blank" rel="noopener">Peça agora</a>
+      <a class="botao botao--secundario" data-telefone-link href="#">Ligar</a>
       <a class="botao botao--secundario" data-google-maps href="#" target="_blank" rel="noopener">Como chegar</a>
     </div>
   </div>
@@ -88,7 +90,10 @@
   <div class="container">
     <h2>Cardápio</h2>
     <div id="cardapio-lista"></div>
-    <p class="cardapio-aviso">Cardápio completo e preços: consulte pelo telefone.</p>
+    <p class="cardapio-aviso">Cardápio completo e preços: consulte pelo telefone ou peça direto pelo delivery.</p>
+    <div class="botoes">
+      <a class="botao botao--principal" data-delivery hidden href="#" target="_blank" rel="noopener">Ver cardápio e pedir</a>
+    </div>
   </div>
 </section>
 
@@ -126,6 +131,7 @@
     <ul id="servicos-lista"></ul>
     <a data-whatsapp hidden href="#" target="_blank" rel="noopener">WhatsApp</a>
     <a data-instagram hidden href="#" target="_blank" rel="noopener">Instagram</a>
+    <a data-facebook hidden href="#" target="_blank" rel="noopener">Facebook</a>
   </div>
 </footer>
 
