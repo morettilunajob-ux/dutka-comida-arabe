@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dutka.vercel.app/sitemap.xml
+Sitemap: https://dutka-comida-arabe.vercel.app/sitemap.xml
